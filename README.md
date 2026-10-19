@@ -6,8 +6,6 @@
 
 課程要求 200 張訓練圖（男女各 100）做五折交叉驗證，並另以獨立的 100 張正式測試圖（男女各 50）做最終評估。訓練資料交付包含 200 張；正式測試圖由 A 向授課端取得並單獨封存，程式與設定鎖定後再交 F 評估。不可把 validation fold 稱為正式測試結果。
 
-流程圖可編輯原始檔和 SVG 預覽位於 assets/。
-
 - 專題比較四條 MATLAB 管線：PCA→Gaussian Naive Bayes、PCA→MLP、Fisher LDA→Gaussian Naive Bayes、Fisher LDA→MLP。
 - 目前訓練資料是 200 張 640×640 RGB PNG，man/woman 各 100 張；每類 50 個檔名群組，每組 2 張。檔名第一段是此資料集的 class tag，第二段只當 fold group key，不宣稱是真實身分。
 - A 產生私人 train_dataset.mat：X 為 200×1024 double、y 為 200×1 categorical、sampleID/groupID 各 200 筆、另有 preprocessSpec。X 的每列是一張影像，欄為特徵。

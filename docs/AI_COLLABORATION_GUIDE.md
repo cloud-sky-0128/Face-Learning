@@ -4,7 +4,7 @@
 
 ## 專題和工具的關係
 
-本專題用 MATLAB 正式完成四種管線：PCA + Gaussian Naive Bayes、PCA + MLP、Fisher LDA + Gaussian Naive Bayes、Fisher LDA + MLP。GitHub 放程式與版本紀錄；MATLAB 執行降維、分類與五折驗證；公開網站解釋流程，不代表 MATLAB 實驗結果；draw.io 保存六人流程圖。
+本專題用 MATLAB 正式完成四種管線：PCA + Gaussian Naive Bayes、PCA + MLP、Fisher LDA + Gaussian Naive Bayes、Fisher LDA + MLP。GitHub 放程式與版本紀錄；MATLAB 執行降維、分類與五折驗證；公開網站解釋流程，不代表 MATLAB 實驗結果。
 
 ## 固定資料與方法規格
 
