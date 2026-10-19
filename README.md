@@ -48,9 +48,9 @@ For later sessions, switch to your assigned branch and run `git pull --ff-only` 
 
 The website's A–F pages include step-by-step MATLAB and Git commands: <https://face-learning-lab-heetah-20261015.divine-siren-9327.chatgpt.site/#team-workflow>.
 
-## F stage one: shared folds
+## F 第一階段：建立全組共用的五折分組
 
-Role F validates the private `train_dataset.mat`, runs synthetic tests, and creates the shared group-preserving five-fold manifest with MATLAB `rng(2026, 'twister')`:
+F 會先執行合成資料測試並驗證私人的 `train_dataset.mat`，再使用 MATLAB `rng(2026, 'twister')` 建立保留群組關係的五折分組表：
 
 ```matlab
 addpath('matlab');
@@ -58,4 +58,4 @@ addpath('matlab');
     runFStageOne('path/to/private/train_dataset.mat');
 ```
 
-The generated `fold_manifest.csv`, `fold_counts.csv`, and `fold_config.json` stay in the private data folder and are intentionally ignored by Git.
+產生的 `fold_manifest.csv`、`fold_counts.csv` 與 `fold_config.json` 會保留在私人資料夾，並由 Git 排除，不會上傳到公開儲存庫。
